@@ -1,0 +1,322 @@
+
+      :root {
+  --primary-color: #4CAF50;
+  --secondary-color: #8BC34A;
+  --accent-color: #FFC107;
+  --text-color: #333;
+  --background-color: #F5F5F5;
+}
+
+.categoriesbg{
+  background-color: #8d9385;
+  border-radius:20%;
+  margin:5%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.partner img{
+  height: 200px;
+  width:300px;
+  border-radius: 50%;
+  padding:2%;
+  background-color: rgba(139, 137, 137,0.3);
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+ 
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+.banner {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+.hero {
+  background-image: url('https://source.unsplash.com/1600x900/?organic,food');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.cta-button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+.category img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+.testimonials {
+  background-color: var(--secondary-color);
+}
+
+.newsletter {
+  background-color: var(--secondary-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+/* Chatbot styles */
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#chatHeader {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#closeChat {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#chatMessages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+#userInput {
+  display: flex;
+  padding: 10px;
+}
+
+#userMessage {
+  flex-grow: 1;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.chatMessage {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.user {
+  background-color: #e0e0e0;
+  align-self: flex-end;
+}
+
+.bot {
+  background-color: var(--secondary-color);
+  color: white;
+  align-self: flex-start;
+}
+
+#chatbotButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  #chatbot {
+      width: 90%;
+      right: 5%;
+      bottom: 80px;
+  }
+
+  #chatbotButton {
+      bottom: 20px;
+      right: 20px;
+  }
+  .category img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10%;
+    padding:0;
+    margin:0;
+  }
+
+  
+}
+/* Add this to your existing CSS */
+
+/* Product Card Hover Effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: #4CAF50 solid 2px;
+  background-color: rgba(76, 175, 80, 0.2)
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card-body {
+  transition: background-color 0.3s ease;
+}
+
+.card:hover .card-body {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Button Hover Effect */
+.btn-primary {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Navbar Link Hover Effect */
+.nav-link {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important;
+  transform: translateY(-2px);
+}
+
+/* Category Hover Effect */
+.category {
+  transition: transform 0.3s ease;
+}
+
+.category:hover {
+  transform: scale(1.05);
+}
+figure img:hover{
+  transform: scale(1.10);
+
+}
+.category img:hover{
+  border:white solid 5px;
+}
+
+
+.btn-warning:hover{
+  background-color:#FF5733 ;
+  transform: scale(1.05);
+
+}
+
+.testimonials .blockquote:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Newsletter Form Hover Effect */
+.newsletter .form-control {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newsletter .form-control:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Footer Social Icons Hover Effect */
+.social-icons a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+/* Partner Logo Hover Effect */
+.partner img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Blog Card Hover Effect */
+#blog .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#blog .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Chatbot Button Hover Effect */
+#chatbotButton {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#chatbotButton:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
